@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Bike Garage</title>
+  <link rel="stylesheet" href="menu.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .about-section {
+      padding: 60px 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+      font-family: "Hubot Sans", sans-serif;
+    }
+
+    .about-section h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+      color: #333;
+    }
+
+    .about-values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .value-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .value-card h3 {
+      color: #f7c631f1;
+      margin-bottom: 10px;
+    }
+
+    .value-card p {
+      color: #444;
+    }
+
+    @media (max-width: 600px) {
+      .about-section h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="white">
+    <nav>
+      <a class="har" href="index.html"><img src="outline.jpg" alt="logo" /></a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="bikes.html">BIKES</a></li>
+          <li><a href="parts.html">PARTS</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </div>
+      <div class="signin">
+        <a href="signin.html">Sign In</a>
+      </div>
+    </nav>
+  </section>
+
+  <section class="about-section">
+    <h1>About Us</h1>
+    <p>Welcome to our Bike Garage — where passion meets performance. We’re dedicated to bringing you the best in bikes, parts, and service. From casual riders to hardcore enthusiasts, we’ve got something for everyone.</p>
+    <p>We believe in power, style, and reliability. Every product we sell and every service we offer is built around that vision.</p>
+
+    <div class="about-values">
+      <div class="value-card">
+        <h3>Our Mission</h3>
+        <p>Deliver top-notch bikes and unmatched service to empower every rider.</p>
+      </div>
+      <div class="value-card">
+        <h3>Our Vision</h3>
+        <p>To become the most trusted name in motorcycle performance and care.</p>
+      </div>
+      <div class="value-card">
+        <h3>Why Choose Us?</h3>
+        <p>Expert staff, premium products, and a passion for riding that matches yours.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

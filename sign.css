@@ -1,0 +1,129 @@
+/* Sign In Section */
+.signin-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.signin-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.signin-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 16px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #f7c631f1;
+}
+
+.submit-group {
+    margin-top: 20px;
+}
+
+.btn-signin {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #f7c631f1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-signin:hover {
+    background-color: #e2a920;
+}
+
+.signup-prompt {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.signup-prompt a {
+    text-decoration: none;
+    color: #f7c631f1;
+}
+
+.signup-prompt a:hover {
+    color: #e2a920;
+}
+
+/* Responsive Styles for Sign In Page */
+@media (max-width: 768px) {
+    .signin-container {
+        padding: 30px;
+    }
+
+    .signin-container h1 {
+        font-size: 2rem;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+    .btn-signin {
+        font-size: 16px;
+    }
+
+    .signup-prompt {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .signin-container {
+        padding: 20px;
+    }
+
+    .signin-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .input-group input {
+        font-size: 12px;
+    }
+
+    .btn-signin {
+        font-size: 14px;
+    }
+
+    .signup-prompt {
+        font-size: 10px;
+    }
+}

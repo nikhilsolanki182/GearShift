@@ -1,0 +1,259 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Hubot Sans", sans-serif;
+   }
+   
+   body {
+   background-blend-mode: darken;
+   }
+   
+   /* Header Section with Background Image */
+.header {
+   margin: 0;
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)), url(view-cool-powerful-motorcycle.jpg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+   /* Navigation Bar */
+   nav {
+   display: grid;
+   grid-template-columns: auto 1fr auto;
+   padding: 1% 3%;
+   justify-items: start;
+   align-items: center;
+   grid-gap: 20px;
+   }
+   
+   .har {
+   font-size: 25px;
+   color: white;
+   font-weight: 700;
+   text-decoration: none;
+   transition: 1s;
+   word-spacing: 7px;
+   }
+   
+   .har img {
+   height: 10vh;
+   width: 90px;
+   mix-blend-mode: transparent;
+   
+   }
+   
+   .nav-links {
+   padding: 10px;
+   flex: 1;
+   text-align: left;
+   }
+   
+   .nav-links ul {
+   display: flex;
+   justify-content: space-around;
+   }
+   
+   .nav-links ul li {
+   margin-bottom: 0;
+   margin-top: 0;
+   list-style: none;
+   }
+   
+   .nav-links ul li a {
+   padding: 9px;
+   color: black;
+   text-decoration: none;
+   font-size: 20px;
+   transition: 0.5s;
+   font-weight: 500;
+   }
+   
+   .signin a {
+   text-decoration: none;
+   color: black;
+   font-weight: 500;
+   font-size: 20px;
+   
+   }
+   
+   .signin a:hover {
+   color: #f7c631f1;
+   }
+   
+   .nav-links ul li a:hover {
+   background-color: #f7c631f1;
+   color: white;
+   }
+   
+   /* Quote Section */
+   .quote {
+   position: absolute;
+   color: white;
+   margin-top: 15%;
+   margin-left: 6%;
+   font-family: sans-serif;
+   }
+   
+   .quote h1 {
+   font-size: 50px;
+   }
+   
+   .quote a {
+   margin-top: 3%;
+   color: black;
+   text-decoration: none;
+   display: inline-block;
+   background-color: white;
+   padding: 12px 25px;
+   font-size: 17px;
+   border-radius: 3px;
+   
+   transition: background-color 0.5s, color 0.5s,
+   border-radius 0.5s;
+   position: relative;
+   cursor: pointer;
+   }
+   
+   .quote a:hover {
+   background-color: #f7c631f1;
+   color: white;
+   border-radius: 10px;
+   transition: 0.5s;
+   }
+   
+   /* After Image Section */
+   .afterimage {
+   margin-top: 50px;
+   font-family: sans-serif;
+   }
+   
+   .row {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   text-align: center;
+   }
+   
+   .row ul {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   list-style: none;
+   padding: 0;
+   }
+   
+   .row ul li {
+   padding: 8px 12px;
+   position: relative;
+   margin-bottom: 50px;
+   }
+   
+   .row ul li a {
+   padding: 8px 13px;
+   border-radius: 4px;
+   color: black;
+   text-decoration: none;
+   background-color: transparent;
+   font-size: 17px;
+   font-weight: 600;
+   border: 0.7px solid gray;
+   }
+   
+   .row ul li a:hover {
+   background-color: black;
+   color: white;
+   }
+   
+   /* Model Section with Grid */
+   .model {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+   margin: 20px 0;
+   padding: 20px;
+   border: 2px solid #ccc;
+   border-radius: 10px;
+   background-color: #f9f9f9;
+   
+   }
+   
+   .model-item1, .model-item2 {
+   text-align: center;
+   margin: 20px;
+   }
+   
+   .model-item1 img, .model-item2 img {
+   width: 100%;
+   max-width: 300px;
+   height: auto;
+   }
+   
+   .model-item1 p, .model-item2 p {
+   margin-top: 10px;
+   font-size: 16px;
+   font-weight: 700;
+   color: black;
+   }
+   
+   /* Responsive Styles */
+   /* For Tablets (screen width 768px and above) */
+   @media (max-width: 768px) {
+   nav {
+   grid-template-columns: auto 1fr;
+   }
+   
+   .quote h1 {
+   font-size: 3rem;
+   }
+   
+   .quote a {
+   
+   font-size: 16px;
+   }
+   
+   .model {
+   grid-template-columns: repeat(2, 1fr);
+   }
+   
+   .row ul {
+   flex-direction: column;
+   align-items: center;
+   }
+   }
+   
+   /* For Mobile (screen width 480px and below) */
+   @media (max-width: 480px) {
+   nav {
+   grid-template-columns: 1fr;
+   text-align: center;
+   }
+   
+   .nav-links ul {
+   flex-direction: column;
+   align-items: center;
+   }
+   
+   .quote h1 {
+   font-size: 2.5rem;
+   }
+   
+   .quote a {
+   font-size: 14px;
+   }
+   
+   .model {
+   grid-template-columns: 1fr;
+   }
+   
+   .model-item1, .model-item2 {
+   margin-bottom: 20px;
+   }
+   
+   .row ul li {
+   padding: 10px;
+   margin-bottom: 20px;
+   }
+   }
