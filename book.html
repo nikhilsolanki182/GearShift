@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Service</title>
+  <link rel="stylesheet" href="book.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <section class="booking-container">
+    <h1>Book a Service</h1>
+    <form class="booking-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required />
+
+      <label for="service">Select Service</label>
+      <select id="service" name="service" required>
+        <option value="">--Choose a service--</option>
+        <option value="oil">Oil Change</option>
+        <option value="brake">Brake & Tyre Check</option>
+        <option value="tuning">Performance Tuning</option>
+        <option value="diagnostics">Full Diagnostics</option>
+      </select>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Preferred Time</label>
+      <input type="time" id="time" name="time" required />
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+</body>
+</html>
